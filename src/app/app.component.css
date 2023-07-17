@@ -1,9 +1,16 @@
 :host {
   display: flex;
+  flex-direction: column;
   height: 100vh;
 }
 
 #map {
+  height: 100px;
+  width: 300px;
+  margin-bottom: 10px;
+}
+
+#dangerousSwiper {
   height: 100px;
   width: 300px;
 }

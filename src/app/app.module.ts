@@ -5,11 +5,17 @@ import { AngularYandexMapsModule } from 'angular8-yandex-maps';
 import { AppComponent } from './app.component';
 import { register as registerSwiper } from 'swiper/element/bundle';
 import { routes } from './app.routing';
+import { SwiperDirective } from './directives/swiper.directive';
 
 registerSwiper();
 
 @NgModule({
-  imports: [BrowserModule, RouterModule, AngularYandexMapsModule],
+  imports: [
+    BrowserModule,
+    RouterModule,
+    AngularYandexMapsModule,
+    SwiperDirective,
+  ],
   providers: [provideRouter(routes)],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
   declarations: [AppComponent],
