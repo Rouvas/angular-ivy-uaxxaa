@@ -1,0 +1,29 @@
+<ya-map
+  id="map"
+  [center]="[55.723359, 37.563809]"
+  [zoom]="12"
+  [state]="{ controls: [] }"
+>
+  <ya-placemark
+    [geometry]="[55.707081, 37.591437]"
+    [options]="placemarkOptions"
+    [properties]="placemarkProperties"
+  ></ya-placemark>
+  <ya-placemark
+    [geometry]="[55.723359, 37.563809]"
+    [options]="placemarkOptions"
+    [properties]="placemarkProperties"
+  ></ya-placemark>
+  <ya-placemark
+    [geometry]="[55.709513, 37.622505]"
+    [options]="placemarkOptions"
+    [properties]="placemarkProperties"
+  ></ya-placemark>
+</ya-map>
+
+
+<swiper-container raSwiper [config]="config" init="false">
+  <swiper-slide *ngFor="let vehicle of vehicles">
+    vehicle
+  </swiper-slide>
+</swiper-container>

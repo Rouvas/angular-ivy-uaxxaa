@@ -1,0 +1,9 @@
+:host {
+  display: flex;
+  height: 100vh;
+}
+
+#map {
+  height: 100px;
+  width: 300px;
+}
